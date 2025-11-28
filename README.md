@@ -15,7 +15,7 @@ def multiply(a, b):
 # division  Function
 def divide(a, b):
     if b == 0:
-        return "Error: Cannot divide by zero"
+        return "Cannot divide by zero"
     return a / b
 
 
@@ -26,7 +26,7 @@ def get_number(number):
             value = float(input(number))
             return value
         except:
-            print("Invalid input! Please enter a valid number.")
+            print("Please enter a valid number.")
 
 
 
@@ -58,7 +58,7 @@ def basic_calculator():
             result = divide(num2, num2)
             print(f"{num1} / {num2} = {result}")
         else:
-            print("Invalid option! Please choose a valid one.")
+            print("Invalid option.")
 
 
 
@@ -76,7 +76,7 @@ class Calculator:
     
     def divide(self, a, b):
         if b == 0:
-            return "Error: Cannot divide by zero"
+            return "Cannot divide by zero"
         return a / b
 
     def menu(self):
